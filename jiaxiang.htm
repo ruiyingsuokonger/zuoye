@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的家乡</title>
+    <style>
+        body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav a:hover,
+        nav a.active {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // JavaScript函数，用于处理导航栏的点击事件
+        function navigateTo(sectionId) {
+            // 获取所有部分
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                // 隐藏所有部分
+                section.style.display = 'none';
+            });
+            // 显示对应的部分
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>我的家乡龙泉</h1>
+    </header>
+    <nav>
+        <a href="#introduction" onclick="navigateTo('introduction');" class="active">家乡简介</a>
+        <a href="#specialties" onclick="navigateTo('specialties');">家乡特产</a>
+        <a href="#scenic" onclick="navigateTo('scenic');">风景名胜</a>
+    </nav>
+    <section id="introduction" style="display: block;">
+        <h2>简介</h2>
+        <p>龙泉市，浙江省辖县级市，由丽水市代管，位于浙江省西南部，东邻云和县、景宁畲族自治县，南连庆元县，北接遂昌县、松阳县，西与福建省南平市浦城县相连，介于北纬27°42′～28°20′，东经118°42′～119°25′之间；是浙江省入江西、福建的主要通道，素有“瓯婺八闽通衢”、“驿马要道，商旅咽喉”之称，历来为浙、闽、赣毗邻地区商贸重镇。龙泉森林覆盖率达84.2%，总面积3059平方千米 ，截至2022年10月，龙泉辖4个街道、8个镇、7个乡；市政府驻龙渊街道。截至2023年末，龙泉市常住人口25.20人，城镇化率69.4%。 
+龙泉市是国家历史文化名城，唐乾元二年（759年），始置龙泉县。因春秋，欧冶子于此铸就三柄宝剑，其一称“龙渊”，因而得名，后避唐高祖李渊讳，改龙渊乡为龙泉乡。1990年12月，撤县设县级市。龙泉市是青瓷之都、宝剑之邦，也是世界香菇栽培发源地、中华灵芝第一乡，龙泉宝剑被誉为“剑中之魁”。龙泉青瓷始于三国两晋，“哥窑”为宋代五大名窑之一。2009年，龙泉青瓷传统烧制技艺入选“人类非物质文化遗产代表作”名录。 龙泉曾获国家卫生城市、国家级生态示范区、国家森林城市、浙江省生态市和浙江省园林城市，被誉为“处州十县好龙泉”。</p>
+        <div class="img-container">
+            <img src="C:\Users\刘心怡\Desktop\zhaopian\lq.jpeg" alt="家乡简介图片">
+        </div>
+
+    </section>
+    <section id="specialties" style="display: none;">
+        <h2>家乡特产</h2>
+        <p>2006年5月20日，龙泉宝剑锻制技艺经国务院批准列入第一批国家级非物质文化遗产名录。龙泉市生产的龙泉宝剑，相传创始于春秋战国时代，至今已有二千六百多年历史。民间广泛流传着欧冶子铸剑的故事。龙渊也是龙泉剑最初的名字。据传有一次欧冶子汲水淬剑，忽然出现了“五色龙纹”，七星斗像，人们就将铸剑的地方称为“龙渊”，把剑称为“七星龙渊剑”。至唐代因避高祖李渊讳，便把“渊”字改成“泉”字。</p>
+        <div class="img-container">
+         <img src="C:\Users\刘心怡\Desktop\zhaopian\baojian.jpg" alt="家乡特产图片">
+         </div>
+         <p>龙泉青瓷烧制技艺，2006年列入首批国家级非物质文化遗产名录，2009年正式入选的世界非物质文化遗产保护名录。
+龙泉青瓷传统烧制技艺包括原料的粉碎、淘洗、陈腐和练泥；器物的成型、晾干、修坯、装饰、素烧、上釉、装匣、装窑；最后在龙窑内用木柴烧成。在原料选择、釉料配制、造型制作、窑温控制方面，龙泉青瓷均具有独特的技艺。龙泉窑始于西晋，北宋时已初具规模，南宋中晚期进入鼎盛时期，龙泉窑产出的龙泉青瓷，以“千峰翠色”的明丽和“如冰似玉”的晶莹著称于世，享有“青如玉、明如镜、声如磬”的“陶瓷之花”的美名。<p>
+         <img src="C:\Users\刘心怡\Desktop\zhaopian\qc.jpg" alt="家乡特产图片">
+        </div>
+
+    </section>
+    <section id="scenic" style="display: none;">
+        <h2>风景名胜</h2>
+        <p>龙泉山旅游度假区，国家AAAA级旅游景区、国家级自然保护区，位于浙江省龙泉市凤阳山·百山祖国家级自然保护区内，其主峰黄茅尖海拔1929米，为江浙第一高峰。年平均气温12摄氏度，与云贵高原相似，形成了高原湖泊、高山草甸、云海雾凇等众多高原特有的自然奇观。目前已开放龙泉大峡谷、凤阳湖、绝壁奇松、七星潭、黄茅尖、瓯江源等六大景区。</p>
+        <div class="img-container">
+            <img src="C:\Users\刘心怡\Desktop\zhaopian\fengyangshanzp.jpg" alt="风景名胜图片">
+        </div>
+
+    </section>
+    </body>
+</html>
+
